@@ -1,4 +1,4 @@
-from flask_jwt_extended import create_access_token, jwt_required,set_access_cookies,unset_jwt_cookies,JWTManager
+from flask_jwt_extended import create_access_token, jwt_required,set_access_cookies,unset_jwt_cookies,JWTManager,get_jwt_identity,get_jwt
 from flask import Flask,render_template,jsonify, request
 import os
 
