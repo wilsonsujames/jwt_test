@@ -14,7 +14,7 @@ app.config['JWT_BLACKLIST_TOKEN_CHECKS'] = ['access']
 @app.route('/')
 def index():
     
-    AccountName=request.form.get('AccountName')
+    AccountName='bob'
     access_token = create_access_token(identity=AccountName)
     
     return jsonify({'login_status':'seccess','jwt':access_token})
